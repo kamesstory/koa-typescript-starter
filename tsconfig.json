@@ -3,10 +3,14 @@
         "module": "commonjs",
         "target": "es2017",
         "noImplicitAny": true,
+        "strictNullChecks": true,
         "outDir": "./dist",
-        "sourceMap": true
+        "sourceMap": true,
+        "preserveConstEnums": true,
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
     },
-    "include": [
-        "src/**/*"
-    ]
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
 }
